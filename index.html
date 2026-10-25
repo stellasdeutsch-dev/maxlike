@@ -202,6 +202,71 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
 .prob details{padding:13px 16px}
 .prob summary{font-size:15px}
 
+/* lecture */
+.startgrid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+.startbox{background:var(--beige);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(22px,4vw,40px);display:flex;flex-direction:column;gap:14px}
+.startbox.soft{background:var(--pink-2)}
+.startbox h2{font-size:clamp(26px,3.4vw,40px)}
+.checks{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.checks li{display:flex;gap:10px;align-items:flex-start}
+.checks li::before{content:"✓";flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700;margin-top:2px}
+.phead2{display:flex;flex-direction:column;gap:10px}
+.pnum{align-self:flex-start;font-size:13px;font-weight:600;background:var(--ink);color:var(--white);border-radius:99px;padding:4px 12px}
+.twocol{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px;align-items:start}
+.prose{display:flex;flex-direction:column;gap:14px;max-width:66ch}
+.prose.wide{max-width:none}
+.arrows{display:flex;gap:6px;flex-wrap:wrap}
+.arrows span{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-weight:700;background:var(--beige);border:1px solid var(--line)}
+.arrows span.h{background:var(--orange);color:#fff;border-color:transparent}
+.terms{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.term{background:var(--beige);border:1px solid var(--line);border-radius:var(--r-m);padding:16px;display:flex;flex-direction:column;gap:6px}
+.term b{font-size:17px}
+.term span{font-size:14.5px;color:#3d3a37}
+.remember{background:var(--ink);color:var(--white);border-radius:var(--r-m);padding:16px 20px;font-size:16px}
+.remember b{color:#ffb08f}
+.tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.tool{background:var(--beige);border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(18px,3vw,26px);display:flex;flex-direction:column;gap:12px;min-width:0}
+.tool.wide{grid-column:1 / -1}
+.tool p{font-size:15.5px;color:#3d3a37}
+.tool details{background:var(--white)}
+.rule{font-family:var(--math);font-style:italic;font-size:clamp(17px,2vw,20px);background:var(--white);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-align:center;overflow-x:auto}
+.rule.big{font-size:clamp(22px,3vw,30px)}
+.hill{width:100%;height:auto;background:var(--white);border-radius:12px;border:1px solid var(--line)}
+.rules{width:100%;border-collapse:collapse;background:var(--white);border-radius:12px;overflow:hidden;font-size:14.5px}
+.rules td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.rules tr:last-child td{border-bottom:0}
+.rules td:first-child{white-space:nowrap;font-weight:600}
+.derive{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden}
+.derive.small{border-radius:var(--r-m)}
+.drow{display:grid;grid-template-columns:88px minmax(0,1.15fr) minmax(0,1fr);gap:14px;padding:14px 18px;border-top:1px solid var(--line);align-items:baseline}
+.drow:first-child{border-top:0}
+.drow .k{font-size:13px;font-weight:600;color:var(--orange-deep)}
+.drow .eq{font-family:var(--math);font-style:italic;font-size:18px;overflow-x:auto;white-space:nowrap;padding-bottom:2px}
+.drow .why{font-size:14.5px;color:var(--ink-2)}
+.drow.ans{background:var(--pink-2)}
+.drow.ans .eq{font-weight:600}
+.ltable{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:15px}
+.ltable th{font-size:13px;color:var(--ink-2);text-align:left;padding:6px 8px;font-weight:600}
+.ltable td{padding:8px;border-top:1px solid var(--line)}
+.ltable td:last-child{width:40%}
+.ltable td i{display:block;height:10px;border-radius:99px;background:linear-gradient(90deg,#ffd2bd,var(--orange))}
+.ltable tr.best td{font-weight:700;background:var(--pink-2)}
+.note2{font-size:14px;color:var(--ink-2)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.note-card{background:var(--pink-2);border-radius:var(--r-m);padding:16px 18px;font-size:15.5px}
+.subh{font-size:19px;margin-top:6px}
+.olist{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
+.ansline{font-family:var(--math);font-style:italic;font-size:24px;font-weight:600;background:var(--pink-2);border-radius:12px;padding:10px 14px;align-self:flex-start}
+.sheet{width:100%;border-collapse:collapse;font-size:15px}
+.sheet th{text-align:left;font-size:13px;color:var(--ink-2);padding:8px 10px;font-weight:600}
+.sheet td{padding:10px;border-top:1px solid var(--line)}
+.panel:has(.sheet){overflow-x:auto}
+.sheet{min-width:560px}
+.traps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.trap{background:var(--beige);border:1px solid var(--line);border-radius:var(--r-m);padding:16px;display:flex;flex-direction:column;gap:6px;font-size:14.5px}
+.trap b{color:var(--orange-deep)}
+@media (max-width:980px){.startgrid,.twocol,.tools{grid-template-columns:1fr}.grid3,.traps{grid-template-columns:1fr 1fr}.drow{grid-template-columns:1fr;gap:4px}.drow .eq{white-space:normal}}
+@media (max-width:560px){.terms,.grid3,.traps{grid-template-columns:1fr}}
 @media (max-width:980px){
   .snav .links{display:none}
   .shero{grid-template-columns:1fr}
@@ -253,7 +318,7 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
         <div class="screen">
           <nav class="snav" aria-label="Page">
             <a class="logo" href="#top"><svg viewBox="0 0 120 128" aria-hidden="true"><use href="#penguin"/></svg>MaxLike</a>
-            <span class="links"><a href="#recipe">Recipe</a><a href="#examples">Examples</a><a href="#lab">Lab</a><a href="#exam">Exam</a><a href="#faq">Questions</a><a href="#practice">Practice</a></span>
+            <span class="links"><a href="#story">Lecture</a><a href="#toolbox">Toolbox</a><a href="#recipe">Recipe</a><a href="#ex1">Examples</a><a href="#lab">Lab</a><a href="#exam">Exam</a><a href="#faq">Questions</a><a href="#practice">Practice</a></span>
             <a class="btn dark" href="#lab">Open the lab</a>
           </nav>
           <div class="shero">
@@ -261,7 +326,7 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
               <span class="label">Statistical Learning · Day 2</span>
               <h1><b>Maximum likelihood picks the answer that makes your data most likely.</b> <span class="dim">No prior, no magic, just one derivative.</span></h1>
               <p class="sub">Five Dota examples, the 4-step recipe, and <b>a lab where you shoot Mirana arrows</b> and watch the best guess move.</p>
-              <div class="actions"><a class="btn orange" href="#recipe">Learn the recipe</a><a class="btn" href="#examples">See examples</a></div>
+              <div class="actions"><a class="btn orange" href="#story">Start the lecture</a><a class="btn" href="#toolbox">Math toolbox</a></div>
             </div>
             <div class="cardzone" aria-hidden="true">
               <div class="bars"><i style="height:26%"></i><i style="height:38%"></i><i style="height:52%"></i><i style="height:66%"></i><i style="height:80%"></i><i style="height:92%"></i><i style="height:84%"></i><i style="height:62%"></i><i style="height:40%"></i><i style="height:22%"></i></div>
@@ -281,76 +346,210 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
     </div>
   </section>
 
-  <!-- intro -->
-  <section class="section center">
-    <span class="label">Estimating a parameter just got simpler</span>
-    <p class="lead2">You have data. <span class="dim">You have a model with one unknown number.</span> MLE finds the number <span class="dim">under which your data would be the least surprising.</span></p>
-    <p style="max-width:62ch;color:var(--ink-2)">Yesterday you met the distributions. Each has a parameter: θ for Bernoulli, λ for Exponential, μ and σ² for Gaussian. In real life you don't know the parameter. You only see data. MLE is the first way to guess it, and on Day 3 the Bayesian way will build on it.</p>
+  <!-- START -->
+  <section class="section">
+    <div class="startgrid">
+      <div class="startbox">
+        <span class="label">Lecture 2 · about 90 minutes</span>
+        <h2>By the end of this lecture <span class="dim">you will be able to…</span></h2>
+        <ul class="checks">
+          <li>say in one sentence what a <b>parameter</b>, a <b>likelihood</b> and an <b>MLE</b> are</li>
+          <li>write the likelihood for any simple model</li>
+          <li>use logs and derivatives to find the best parameter, step by step</li>
+          <li>explain <i>why</i> the answer is “hits ÷ tries” or “1 ÷ average”</li>
+          <li>solve the MLE tasks from the 2025 and 2026 finals</li>
+        </ul>
+      </div>
+      <div class="startbox soft">
+        <span class="label">What you need to know already</span>
+        <h3>Nothing. Really.</h3>
+        <p>Every math tool used here (multiplying probabilities, Σ and Π, logarithms, derivatives, solving an equation) is explained in Part 2 with small examples. If you know them, skim. If not, go slowly.</p>
+        <p><b>How to study this page:</b> read one part, then close your eyes and say the key idea out loud. Every part ends with a <b>“remember it”</b> line for that.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PART 1 -->
+  <section class="section" id="story">
+    <div class="phead2"><span class="pnum">Part 1</span><h2>The question. <span class="dim">A new Mirana joins your team.</span></h2></div>
+    <div class="twocol">
+      <div class="prose">
+        <p>You don't know how good she is. You watch her shoot 10 Sacred Arrows. H means hit, M means miss:</p>
+        <div class="arrows" aria-label="Ten arrows: hit hit miss hit hit hit miss hit miss hit"><span class="h">H</span><span class="h">H</span><span>M</span><span class="h">H</span><span class="h">H</span><span class="h">H</span><span>M</span><span class="h">H</span><span>M</span><span class="h">H</span></div>
+        <p>7 hits, 3 misses. What is her real hit rate? Your gut says <b>70%</b>. Your gut is right, and this lecture shows <b>why</b>.</p>
+        <p>Why learn a method if the gut already knows? Because for other questions the gut has no answer. “The enemy ganked you after 2, 5, 3 and 6 minutes. How often do they gank?” For that you need a method that always works. That method is <b>maximum likelihood</b>.</p>
+      </div>
+      <div class="terms">
+        <div class="term"><b>Data</b><span>What you actually saw. Here: the 10 arrows.</span></div>
+        <div class="term"><b>Model</b><span>A rule for how the data is produced. Here: “each arrow hits with the same chance, independently.”</span></div>
+        <div class="term"><b>Parameter θ</b><span>The unknown number inside the model, like a knob. Here: θ = her true hit rate. θ is read “theta”.</span></div>
+        <div class="term"><b>Estimate θ̂</b><span>Our best guess for θ from the data. The hat ^ means “estimated”. Read “theta hat”.</span></div>
+      </div>
+    </div>
+    <p class="remember"><b>Remember it:</b> the model has a knob θ. We see data. We want to turn the knob to the position that fits the data best.</p>
+  </section>
+
+  <!-- PART 2 -->
+  <section class="section" id="toolbox">
+    <div class="phead2"><span class="pnum">Part 2</span><h2>Math toolbox. <span class="dim">Five tools, each with a tiny example.</span></h2></div>
+    <div class="tools">
+      <article class="tool">
+        <span class="label">Tool 1 · Multiply for “and”</span>
+        <h3>Independent events: multiply their probabilities</h3>
+        <div class="rule">P(A and B) = P(A) · P(B)</div>
+        <p>“Independent” means one arrow does not change the next one. Then the chance of a whole sequence is the product of the single chances.</p>
+        <p><b>Example.</b> Hit rate θ. Hit, then miss: <span class="m">θ · (1 − θ)</span>. If θ = 0.7: <span class="m">0.7 · 0.3 = 0.21</span>.</p>
+        <details><summary>Try it: chance of H, H, M if θ = 0.5?</summary><div class="a"><p><span class="m">0.5 · 0.5 · 0.5 = 0.125</span>.</p></div></details>
+      </article>
+      <article class="tool">
+        <span class="label">Tool 2 · Powers, Σ and Π</span>
+        <h3>Short ways to write long sums and products</h3>
+        <div class="rule">θ · θ · θ = θ³ &nbsp;&nbsp; Σ xᵢ = x₁ + x₂ + … &nbsp;&nbsp; Π aᵢ = a₁ · a₂ · …</div>
+        <p>Σ (big sigma) means “add them all”. Π (big pi) means “multiply them all”. The little i just counts 1, 2, 3, …, n.</p>
+        <p><b>Example.</b> Data 2, 5, 3: <span class="m">Σ xᵢ = 10</span>, <span class="m">Π xᵢ = 30</span>. Seven hits and three misses: <span class="m">θ<sup>7</sup>(1 − θ)<sup>3</sup></span>.</p>
+        <details><summary>Try it: for 4, 7, 5, 8, what is Σ xᵢ and the average x̄?</summary><div class="a"><p><span class="m">Σ xᵢ = 24</span>, <span class="m">x̄ = 24/4 = 6</span>. The average is “Σ divided by n”.</p></div></details>
+      </article>
+      <article class="tool">
+        <span class="label">Tool 3 · Logarithm</span>
+        <h3>log turns products into sums</h3>
+        <div class="rule">log(a·b) = log a + log b &nbsp;&nbsp; log(aᵏ) = k·log a &nbsp;&nbsp; log(eᵃ) = a</div>
+        <p>In this course “log” is the natural log (ln). Two facts matter: the three rules above, and <b>log always goes up</b>: if a &lt; b then log a &lt; log b. Logs of numbers between 0 and 1 are negative. That is normal.</p>
+        <p><b>Example.</b> <span class="m">log(0.7 · 0.3) = log 0.7 + log 0.3 = −0.357 − 1.204 = −1.561</span>, and indeed <span class="m">log 0.21 = −1.561</span>.</p>
+        <details><summary>Try it: write log(θ⁷(1 − θ)³) as a sum.</summary><div class="a"><p><span class="m">7 log θ + 3 log(1 − θ)</span>. Product → sum, power → factor in front.</p></div></details>
+      </article>
+      <article class="tool">
+        <span class="label">Tool 4 · Derivative</span>
+        <h3>The derivative is the slope. At the top of a hill it is 0.</h3>
+        <svg class="hill" viewBox="0 0 420 170" role="img" aria-label="A hill with tangent lines: positive slope on the left, zero at the top, negative on the right">
+          <path d="M20 150 C120 150 150 30 210 30 S300 150 400 150" fill="none" stroke="#fc855d" stroke-width="4" stroke-linecap="round"/>
+          <line x1="95" y1="140" x2="175" y2="70" stroke="#262626" stroke-width="2"/><line x1="160" y1="30" x2="260" y2="30" stroke="#262626" stroke-width="2"/><line x1="245" y1="70" x2="325" y2="140" stroke="#262626" stroke-width="2"/>
+          <circle cx="135" cy="105" r="5" fill="#262626"/><circle cx="210" cy="30" r="6" fill="#262626"/><circle cx="285" cy="105" r="5" fill="#262626"/>
+          <g font-family="Geist, sans-serif" font-size="13" font-weight="600" fill="#262626"><text x="60" y="95">slope +</text><text x="182" y="18">slope 0 = top</text><text x="300" y="95">slope −</text></g>
+        </svg>
+        <table class="rules"><tbody>
+          <tr><td>constant c</td><td>→ 0</td></tr>
+          <tr><td><span class="m">c · θ</span></td><td>→ c</td></tr>
+          <tr><td><span class="m">log θ</span></td><td>→ <span class="m">1/θ</span></td></tr>
+          <tr><td><span class="m">log(1 − θ)</span></td><td>→ <span class="m">−1/(1 − θ)</span> (outside 1/(1−θ) times inside (1−θ)′ = −1)</td></tr>
+          <tr><td><span class="m">1/v</span></td><td>→ <span class="m">−1/v²</span></td></tr>
+          <tr><td>a sum</td><td>→ derivative of each part, added</td></tr>
+        </tbody></table>
+        <details><summary>Try it: derivative of 7 log θ + 3 log(1 − θ)?</summary><div class="a"><p><span class="m">7/θ − 3/(1 − θ)</span>.</p></div></details>
+      </article>
+      <article class="tool wide">
+        <span class="label">Tool 5 · Solving a fraction equation</span>
+        <h3>Get rid of fractions by multiplying both sides</h3>
+        <div class="derive small">
+          <div class="drow"><span class="k">start</span><span class="eq">7/θ = 3/(1 − θ)</span><span class="why">the kind of equation MLE gives you</span></div>
+          <div class="drow"><span class="k">× θ(1−θ)</span><span class="eq">7(1 − θ) = 3θ</span><span class="why">multiply both sides by both denominators; they cancel</span></div>
+          <div class="drow"><span class="k">expand</span><span class="eq">7 − 7θ = 3θ</span><span class="why">multiply out the bracket</span></div>
+          <div class="drow"><span class="k">+ 7θ</span><span class="eq">7 = 10θ</span><span class="why">collect all θ on one side</span></div>
+          <div class="drow"><span class="k">÷ 10</span><span class="eq">θ = 0.7</span><span class="why">done</span></div>
+        </div>
+      </article>
+    </div>
+    <p class="remember"><b>Remember it:</b> multiply for “and”, log turns × into +, the top of a hill has slope 0.</p>
+  </section>
+
+  <!-- PART 3 -->
+  <section class="section" id="likelihood">
+    <div class="phead2"><span class="pnum">Part 3</span><h2>The likelihood. <span class="dim">Try every knob position and ask how well it explains the data.</span></h2></div>
+    <div class="twocol">
+      <div class="prose">
+        <p>Here is the whole idea. Pretend for a moment that you <i>know</i> θ. Then Tool 1 tells you the probability of seeing exactly our 10 arrows (7 H, 3 M):</p>
+        <div class="rule big">L(θ) = θ<sup>7</sup> (1 − θ)<sup>3</sup></div>
+        <p>Now do this for many values of θ. The table shows the result. The value of θ that makes our data most probable is θ = 0.7. That is the <b>maximum likelihood estimate</b>.</p>
+        <p><b>Important:</b> the data stays fixed (our 10 arrows). Only θ moves. L(θ) is “how well this guess explains the data”, a score for each guess. It is <b>not</b> the probability that θ is true; the scores do not even add up to 1.</p>
+      </div>
+      <div class="panel">
+        <table class="ltable">
+          <thead><tr><th>guess θ</th><th>L(θ) = θ⁷(1−θ)³</th><th></th></tr></thead>
+          <tbody>
+            <tr><td>0.3</td><td>0.000075</td><td><i style="width:3%"></i></td></tr>
+            <tr><td>0.5</td><td>0.000977</td><td><i style="width:44%"></i></td></tr>
+            <tr><td>0.6</td><td>0.001792</td><td><i style="width:81%"></i></td></tr>
+            <tr class="best"><td>0.7</td><td>0.002224</td><td><i style="width:100%"></i></td></tr>
+            <tr><td>0.8</td><td>0.001678</td><td><i style="width:75%"></i></td></tr>
+            <tr><td>0.9</td><td>0.000478</td><td><i style="width:21%"></i></td></tr>
+          </tbody>
+        </table>
+        <p class="note2">Check one yourself: for θ = 0.5, <span class="m">0.5<sup>7</sup> · 0.5<sup>3</sup> = 0.5<sup>10</sup> ≈ 0.000977</span>.</p>
+      </div>
+    </div>
+    <p class="remember"><b>Remember it:</b> likelihood = how well a guess explains the data. MLE = the guess with the best score.</p>
+  </section>
+
+  <!-- PART 4 -->
+  <section class="section" id="whylog">
+    <div class="phead2"><span class="pnum">Part 4</span><h2>Why we take the log. <span class="dim">Two reasons, one guarantee.</span></h2></div>
+    <div class="grid3">
+      <div class="step"><span class="label">Reason 1</span><h3>The numbers get tiny</h3><p>10 arrows already give 0.0022. With 1000 arrows L is so close to 0 that a computer just says 0. Logs keep the numbers normal: <span class="m">log 0.0022 ≈ −6.1</span>.</p></div>
+      <div class="step"><span class="label">Reason 2</span><h3>Sums are easier than products</h3><p>A derivative of a long product is messy. A derivative of a sum is easy: one part at a time (Tool 4).</p></div>
+      <div class="step"><span class="label">The guarantee</span><h3>The top stays in the same place</h3><p>Log always goes up (Tool 3). So whichever θ gives the biggest L also gives the biggest log L. We call it <span class="m">ℓ(θ) = log L(θ)</span>.</p></div>
+    </div>
+    <div class="panel">
+      <p><b>Check it with numbers:</b> <span class="m">ℓ(θ) = 7 log θ + 3 log(1 − θ)</span></p>
+      <div class="numbers"><span>ℓ(0.5) = <b>−6.93</b></span><span>ℓ(0.7) = <b>−6.11</b> ← highest</span><span>ℓ(0.9) = <b>−7.65</b></span></div>
+      <p class="note2">Negative numbers: the highest one is the one closest to zero. Same winner as in Part 3.</p>
+    </div>
+    <p class="remember"><b>Remember it:</b> take the log because it turns × into + and does not move the top.</p>
   </section>
 
   <!-- RECIPE -->
   <section class="section" id="recipe">
-    <div style="display:flex;flex-direction:column;gap:12px">
-      <span class="label">The recipe</span>
-      <h2>Four steps. <span class="dim">The same four, every single time.</span></h2>
-    </div>
+    <div class="phead2"><span class="pnum">Part 5</span><h2>The recipe. <span class="dim">The same four steps, every single time.</span></h2></div>
     <div class="recipe">
       <article class="step">
         <div class="dots"><span class="n">01</span><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 5h14M5 12h14M5 19h9" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></span></div>
         <span class="label">Likelihood</span>
         <h3>Multiply the probabilities of all data points</h3>
-        <p>Data points are independent, so <span class="m">L(θ) = p(x₁|θ) · p(x₂|θ) · … · p(xₙ|θ)</span>.</p>
+        <p><span class="m">L(θ) = p(x₁|θ) · p(x₂|θ) · … · p(xₙ|θ)</span>. Tool 1.</p>
       </article>
       <article class="step">
         <div class="dots"><span class="n">02</span><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18c3-9 6-12 16-12" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></span></div>
         <span class="label">Log</span>
         <h3>Take the log: products become sums</h3>
-        <p><span class="m">ℓ(θ) = Σ log p(xᵢ|θ)</span>. Log only goes up, so the peak stays in the same place. Drop terms without θ.</p>
+        <p><span class="m">ℓ(θ) = Σ log p(xᵢ|θ)</span>. Tool 3. Drop terms without θ: their derivative is 0 anyway.</p>
       </article>
       <article class="step">
         <div class="dots"><span class="n">03</span><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 16l5-5 4 4 7-8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
         <span class="label">Derivative</span>
-        <h3>Set the derivative to zero</h3>
-        <p>At the top of a hill the slope is flat: <span class="m">ℓ′(θ) = 0</span>. Solve for θ. That solution is <span class="m">θ̂</span>.</p>
+        <h3>Set the derivative to zero and solve</h3>
+        <p><span class="m">ℓ′(θ) = 0</span>. Tools 4 and 5. The solution is <span class="m">θ̂</span>.</p>
       </article>
       <article class="step">
         <div class="dots"><span class="n">04</span><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
         <span class="label">Check</span>
-        <h3>Make sure it is a maximum</h3>
-        <p><span class="m">ℓ″(θ̂) &lt; 0</span>, or just look at the shape. Watch out for edges: sometimes the top is at a boundary.</p>
+        <h3>Make sure it is a top, not a valley</h3>
+        <p><span class="m">ℓ″(θ̂) &lt; 0</span> means the slope is falling: a top. Also look for tops at the edges.</p>
       </article>
     </div>
+    <p class="remember"><b>Remember it (Dota version):</b> <b>L</b>ast hit, <b>L</b>ast hit, <b>D</b>eny, <b>C</b>heck the minimap → <b>L</b>ikelihood, <b>L</b>og, <b>D</b>erivative, <b>C</b>heck.</p>
   </section>
 
-  <!-- EXAMPLES HUB -->
-  <section class="section center" id="examples">
-    <span class="label">Five models, one recipe</span>
-    <h2>Every Dota example <span class="dim">uses the same four steps.</span></h2>
-    <div class="hub">
-      <div class="pcard" aria-hidden="true"><svg viewBox="0 0 120 128"><use href="#penguin"/></svg></div>
-      <div class="chips">
-        <a class="chip2" href="#ex1"><i>🏹</i>Mirana arrows · Bernoulli</a>
-        <a class="chip2" href="#ex2"><i>⏱️</i>Minutes between ganks · Exponential</a>
-        <a class="chip2" href="#ex3"><i>🎮</i>Losses before a win · Geometric</a>
-        <a class="chip2" href="#ex4"><i>🪙</i>Last hits at 10 min · Gaussian</a>
-        <a class="chip2" href="#ex5"><i>⚔️</i>Random damage · Uniform</a>
-      </div>
+  <!-- PART 6: Bernoulli full -->
+  <section class="section" id="ex1">
+    <div class="phead2"><span class="pnum">Part 6</span><h2>Mirana, fully worked. <span class="dim">Every line, with the reason next to it.</span></h2></div>
+    <div class="prose wide">
+      <p><b>The model.</b> Each arrow hits with probability θ and misses with probability 1 − θ, independently. We saw k hits in n arrows (k = 7, n = 10). We do it with letters, so the answer works for any numbers.</p>
     </div>
-  </section>
-
-  <!-- WORKED EXAMPLES -->
-  <section class="section" aria-label="Worked examples">
-    <article class="ex" id="ex1">
+    <div class="derive">
+      <div class="drow"><span class="k">1 · L</span><span class="eq">L(θ) = θ<sup>k</sup> (1 − θ)<sup>n−k</sup></span><span class="why">Tool 1: multiply θ once for every hit and (1 − θ) once for every miss; Tool 2 writes it as powers</span></div>
+      <div class="drow"><span class="k">2 · log</span><span class="eq">ℓ(θ) = k log θ + (n − k) log(1 − θ)</span><span class="why">Tool 3: log of a product = sum of logs; the power comes down in front</span></div>
+      <div class="drow"><span class="k">3 · D</span><span class="eq">ℓ′(θ) = k/θ − (n − k)/(1 − θ)</span><span class="why">Tool 4: <span class="m">log θ → 1/θ</span> and <span class="m">log(1 − θ) → −1/(1 − θ)</span></span></div>
+      <div class="drow"><span class="k">set 0</span><span class="eq">k/θ = (n − k)/(1 − θ)</span><span class="why">at the top the slope is zero; move the minus part to the other side</span></div>
+      <div class="drow"><span class="k">× θ(1−θ)</span><span class="eq">k(1 − θ) = (n − k)θ</span><span class="why">Tool 5: clear both fractions</span></div>
+      <div class="drow"><span class="k">expand</span><span class="eq">k − kθ = nθ − kθ</span><span class="why">multiply out both brackets</span></div>
+      <div class="drow"><span class="k">+ kθ</span><span class="eq">k = nθ</span><span class="why">the −kθ on both sides cancels</span></div>
+      <div class="drow ans"><span class="k">÷ n</span><span class="eq">θ̂ = k / n = 7/10 = 0.7</span><span class="why">the MLE</span></div>
+      <div class="drow"><span class="k">4 · C</span><span class="eq">ℓ″(θ) = −k/θ² − (n − k)/(1 − θ)² &lt; 0</span><span class="why">both parts are negative, so it is a top ✓</span></div>
+    </div>
+    <div class="ex">
       <div class="left">
-        <span class="label">Example 1 · Bernoulli</span>
-        <h3>Your Mirana hits 7 of 10 arrows. <span class="dim">What hit rate θ explains that best?</span></h3>
-        <div class="mathbox">
-          <span>1. Likelihood: <span class="m">L(θ) = θ<sup>k</sup>(1 − θ)<sup>n−k</sup></span>, k hits out of n</span>
-          <span>2. Log: <span class="m">ℓ(θ) = k log θ + (n − k) log(1 − θ)</span></span>
-          <span>3. Derivative: <span class="m">k/θ − (n − k)/(1 − θ) = 0</span></span>
-          <span class="ok">4. Solve: <span class="m">θ̂ = k / n = 7/10 = 0.7</span></span>
-        </div>
-        <p>The MLE is just the share of hits. That is why “fit by counting” works in Naive Bayes and Markov chains.</p>
+        <span class="label">Why it makes sense: a tug of war</span>
+        <h3>Hits pull θ up. <span class="dim">Misses pull θ down.</span></h3>
+        <p>Look at the derivative again: <span class="m">k/θ</span> comes from the hits and is positive, so it pushes θ higher. <span class="m">(n − k)/(1 − θ)</span> comes from the misses and pushes θ lower. The answer is where both pulls are equally strong. That balance point is exactly the share of hits.</p>
+        <p>If θ were 0.9, three misses would be very surprising, so the misses pull hard. If θ were 0.5, seven hits would be a bit lucky, so the hits pull. They balance at 0.7.</p>
       </div>
       <div class="right">
         <div class="numbers"><span>k = <b>7</b></span><span>n = <b>10</b></span><span>θ̂ = <b>0.70</b></span></div>
@@ -361,67 +560,82 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
           <text x="20" y="196" font-size="12" fill="#a19a94" font-family="Geist, sans-serif">0</text><text x="383" y="196" font-size="12" fill="#a19a94" font-family="Geist, sans-serif">1</text><text x="287" y="34" font-size="13" fill="#262626" font-weight="600" font-family="Geist, sans-serif">θ̂ = 0.7</text>
         </svg>
       </div>
-    </article>
+    </div>
+    <p class="remember"><b>Remember it:</b> Bernoulli MLE = hits ÷ tries, because that is where the pull of the hits and the pull of the misses balance.</p>
+  </section>
 
-    <article class="ex flip" id="ex2">
-      <div class="left">
-        <span class="label">Example 2 · Exponential (Week 4, Question 1)</span>
-        <h3>Minutes between enemy ganks: 2, 5, 3, 6. <span class="dim">How often do they gank?</span></h3>
-        <div class="mathbox">
-          <span>Model: <span class="m">p(x | λ) = λ e<sup>−λx</sup></span>, λ = ganks per minute</span>
-          <span>1–2. <span class="m">ℓ(λ) = n log λ − λ Σ xᵢ</span></span>
-          <span>3. <span class="m">n/λ − Σ xᵢ = 0</span></span>
-          <span class="ok">4. <span class="m">λ̂ = n / Σ xᵢ = 4/16 = 0.25</span>, and <span class="m">ℓ″ = −n/λ² &lt; 0</span> ✓</span>
-        </div>
-        <p>One gank every 4 minutes on average. Notice <span class="m">λ̂ = 1/x̄</span>: one over the average waiting time.</p>
+  <!-- PART 7: Exponential -->
+  <section class="section" id="ex2">
+    <div class="phead2"><span class="pnum">Part 7</span><h2>Time between ganks. <span class="dim">A new model, the same four steps.</span></h2></div>
+    <div class="twocol">
+      <div class="prose">
+        <p><b>What is this model?</b> Some things happen at random moments: ganks, deaths, Roshan attempts. The <b>exponential distribution</b> describes the waiting time x between them:</p>
+        <div class="rule">p(x | λ) = λ e<sup>−λx</sup>, x ≥ 0</div>
+        <p>λ (“lambda”) is the <b>rate</b>: how many events per minute on average. Big λ means short waits. The average wait is <span class="m">1/λ</span>: if they gank 0.25 times per minute, you wait 4 minutes on average.</p>
+        <p><b>Data:</b> the enemy ganked you after 2, 5, 3 and 6 minutes. So n = 4 and <span class="m">Σ xᵢ = 16</span>.</p>
       </div>
-      <div class="right">
-        <div class="numbers"><span>n = <b>4</b></span><span>Σx = <b>16 min</b></span><span>λ̂ = <b>0.25</b></span></div>
-        <svg viewBox="0 0 400 200" role="img" aria-label="Exponential density with rate 0.25">
+      <div class="panel">
+        <svg viewBox="0 0 400 200" role="img" aria-label="Exponential density with rate 0.25 and the four waiting times as dots">
           <path d="M20 180 L20 40 C80 80 140 120 220 150 S330 176 390 178 L390 180Z" fill="url(#orangeArea)"/>
           <path d="M20 40 C80 80 140 120 220 150 S330 176 390 178" fill="none" stroke="#fc855d" stroke-width="3"/>
           <line x1="20" y1="180" x2="390" y2="180" stroke="#e1d8cd"/>
           <g fill="#262626"><circle cx="66" cy="180" r="5"/><circle cx="135" cy="180" r="5"/><circle cx="89" cy="180" r="5"/><circle cx="158" cy="180" r="5"/></g>
           <text x="20" y="198" font-size="12" fill="#a19a94" font-family="Geist, sans-serif">0 min</text><text x="390" y="198" font-size="12" fill="#a19a94" text-anchor="end" font-family="Geist, sans-serif">16 min</text>
         </svg>
+        <p class="note2">Short waits are most likely; long waits are rare. The dots are our four waits.</p>
       </div>
-    </article>
+    </div>
+    <div class="derive">
+      <div class="drow"><span class="k">1 · L</span><span class="eq">L(λ) = λe<sup>−λx₁</sup> · λe<sup>−λx₂</sup> · … = λ<sup>n</sup> e<sup>−λ Σxᵢ</sup></span><span class="why">n copies of λ give λⁿ; and <span class="m">eᵃ · eᵇ = eᵃ⁺ᵇ</span>, so the exponents add up</span></div>
+      <div class="drow"><span class="k">2 · log</span><span class="eq">ℓ(λ) = n log λ − λ Σxᵢ</span><span class="why">Tool 3: <span class="m">log λⁿ = n log λ</span> and <span class="m">log eᵃ = a</span></span></div>
+      <div class="drow"><span class="k">3 · D</span><span class="eq">ℓ′(λ) = n/λ − Σxᵢ</span><span class="why"><span class="m">log λ → 1/λ</span>; <span class="m">λ · Σxᵢ → Σxᵢ</span> (Σxᵢ is just a number)</span></div>
+      <div class="drow"><span class="k">set 0</span><span class="eq">n/λ = Σxᵢ</span><span class="why">slope zero at the top</span></div>
+      <div class="drow ans"><span class="k">solve</span><span class="eq">λ̂ = n / Σxᵢ = 4/16 = 0.25</span><span class="why">multiply by λ, divide by Σxᵢ</span></div>
+      <div class="drow"><span class="k">4 · C</span><span class="eq">ℓ″(λ) = −n/λ² &lt; 0</span><span class="why">a top ✓ (this is Week 4, Question 1)</span></div>
+    </div>
+    <p class="remember"><b>Remember it:</b> <span class="m">λ̂ = n/Σxᵢ = 1/x̄</span>. One over the average wait. Average wait 4 minutes → rate 1/4 per minute.</p>
+  </section>
 
-    <article class="ex" id="ex3">
-      <div class="left">
-        <span class="label">Example 3 · Geometric (both past finals)</span>
-        <h3>Four days. Losses before the first win: 2, 0, 3, 1. <span class="dim">What is your win chance q?</span></h3>
-        <div class="mathbox">
-          <span>Model: <span class="m">p(k | q) = (1 − q)<sup>k</sup> q</span>. Let <span class="m">S = Σ kᵢ = 6</span></span>
-          <span>1–2. <span class="m">L(q) = q<sup>n</sup>(1 − q)<sup>S</sup></span>, <span class="m">ℓ(q) = n log q + S log(1 − q)</span></span>
-          <span>3. <span class="m">n/q − S/(1 − q) = 0</span></span>
-          <span class="ok">4. <span class="m">q̂ = n / (n + S) = 4/10 = 0.4</span></span>
-        </div>
-        <p>It is again “wins divided by all games”: 4 wins in 10 games. The 2026 version counts games until the win (y = k + 1) and gives <span class="m">n / Σ yᵢ</span>, the same number.</p>
+  <!-- PART 8: Geometric -->
+  <section class="section" id="ex3">
+    <div class="phead2"><span class="pnum">Part 8</span><h2>Losses before a win. <span class="dim">The model that was on both finals.</span></h2></div>
+    <div class="twocol">
+      <div class="prose">
+        <p><b>What is this model?</b> Every game you win with probability q. The number of losses k before your first win follows the <b>geometric distribution</b>:</p>
+        <div class="rule">p(k | q) = (1 − q)<sup>k</sup> q, k = 0, 1, 2, …</div>
+        <p>Read it like a story: you lose k times, each with probability (1 − q), and then win once, with probability q. Multiply (Tool 1).</p>
+        <p><b>Data:</b> on four days the losses before the first win were 2, 0, 3, 1. So n = 4 days and <span class="m">S = Σkᵢ = 6</span> losses.</p>
       </div>
-      <div class="right">
-        <div class="numbers"><span>wins <b>4</b></span><span>losses <b>6</b></span><span>q̂ = <b>0.40</b></span></div>
+      <div class="panel">
         <svg viewBox="0 0 400 200" role="img" aria-label="Bar chart of geometric probabilities with q 0.4">
           <g fill="#fc855d"><rect x="30" y="60" width="44" height="120" rx="8"/><rect x="88" y="108" width="44" height="72" rx="8" opacity=".85"/><rect x="146" y="137" width="44" height="43" rx="8" opacity=".7"/><rect x="204" y="154" width="44" height="26" rx="8" opacity=".55"/><rect x="262" y="164" width="44" height="16" rx="6" opacity=".4"/><rect x="320" y="170" width="44" height="10" rx="5" opacity=".3"/></g>
           <g font-size="12" fill="#a19a94" text-anchor="middle" font-family="Geist, sans-serif"><text x="52" y="196">0</text><text x="110" y="196">1</text><text x="168" y="196">2</text><text x="226" y="196">3</text><text x="284" y="196">4</text><text x="342" y="196">5</text></g>
         </svg>
+        <p class="note2">With q = 0.4, zero losses is most likely, and each extra loss is less likely.</p>
       </div>
-    </article>
+    </div>
+    <div class="derive">
+      <div class="drow"><span class="k">1 · L</span><span class="eq">L(q) = Π (1 − q)<sup>kᵢ</sup> q = q<sup>n</sup> (1 − q)<sup>S</sup></span><span class="why">one q per day (n of them); the (1 − q) powers add up to S = Σkᵢ</span></div>
+      <div class="drow"><span class="k">2 · log</span><span class="eq">ℓ(q) = n log q + S log(1 − q)</span><span class="why">Tool 3. It looks exactly like Mirana with k → n and n − k → S</span></div>
+      <div class="drow"><span class="k">3 · D</span><span class="eq">ℓ′(q) = n/q − S/(1 − q)</span><span class="why">Tool 4</span></div>
+      <div class="drow"><span class="k">set 0</span><span class="eq">n(1 − q) = Sq → n = (n + S)q</span><span class="why">Tool 5: clear fractions, expand, collect q</span></div>
+      <div class="drow ans"><span class="k">solve</span><span class="eq">q̂ = n / (n + S) = 4/10 = 0.4</span><span class="why">wins ÷ all games played</span></div>
+    </div>
+    <div class="note-card"><b>The 2026 version.</b> If you count games <i>including</i> the win, y = k + 1, the model is <span class="m">λ(1 − λ)<sup>y−1</sup></span> and the MLE is <span class="m">n/Σyᵢ</span>. Same answer: Σyᵢ = S + n = 10 games, 4 of them wins.</div>
+    <p class="remember"><b>Remember it:</b> geometric MLE = wins ÷ all games. Again a share, like Mirana.</p>
+  </section>
 
-    <article class="ex flip" id="ex4">
-      <div class="left">
-        <span class="label">Example 4 · Gaussian (2025 Final, Task 4(e))</span>
-        <h3>Last hits at 10 minutes: 50, 60, 70. <span class="dim">Best μ and σ²?</span></h3>
-        <div class="mathbox">
-          <span><span class="m">ℓ(μ, σ²) = −(n/2) log σ² − (1/2σ²) Σ (xᵢ − μ)²</span></span>
-          <span>In μ: <span class="m">(1/σ²) Σ (xᵢ − μ) = 0</span> → <span class="m">μ̂ = x̄ = 60</span></span>
-          <span>In σ²: <span class="m">−n/(2σ²) + (1/2σ⁴) Σ (xᵢ − μ̂)² = 0</span></span>
-          <span class="ok"><span class="m">σ̂² = (1/n) Σ (xᵢ − x̄)² = (100 + 0 + 100)/3 ≈ 66.7</span></span>
-        </div>
-        <p>Divide by <b>n</b>, not n − 1. On the 2025 exam the same derivative gave the noise variance in linear regression: <span class="m">σ̂² = (1/n) Σ (yᵢ − ŵᵀxᵢ)²</span>.</p>
+  <!-- PART 9: Gaussian -->
+  <section class="section" id="ex4">
+    <div class="phead2"><span class="pnum">Part 9</span><h2>Last hits on a bell curve. <span class="dim">Two parameters at once.</span></h2></div>
+    <div class="twocol">
+      <div class="prose">
+        <p><b>What is this model?</b> The <b>Gaussian</b> (normal, bell curve) describes numbers that cluster around a center. It has two knobs: <b>μ</b> (“mu”) is the center, <b>σ²</b> (“sigma squared”) is the spread, the average squared distance from the center.</p>
+        <div class="rule">p(x | μ, σ²) = (1/√(2πσ²)) · exp(−(x − μ)² / (2σ²))</div>
+        <p>Don't be scared by the formula. The only part that matters for μ is <span class="m">(x − μ)²</span>: the further x is from the center, the smaller the probability.</p>
+        <p><b>Data:</b> last hits at 10 minutes in three games: 50, 60, 70.</p>
       </div>
-      <div class="right">
-        <div class="numbers"><span>μ̂ = <b>60</b></span><span>σ̂² = <b>66.7</b></span><span>σ̂ ≈ <b>8.2</b></span></div>
+      <div class="panel">
         <svg viewBox="0 0 400 200" role="img" aria-label="Bell curve centered at 60 last hits">
           <path id="ex4path" d="" fill="url(#orangeArea)"/><path id="ex4line" d="" fill="none" stroke="#fc855d" stroke-width="3"/>
           <line x1="20" y1="180" x2="390" y2="180" stroke="#e1d8cd"/>
@@ -429,22 +643,45 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
           <g font-size="12" fill="#a19a94" text-anchor="middle" font-family="Geist, sans-serif"><text x="158.8" y="198">50</text><text x="205" y="198">60</text><text x="251.3" y="198">70</text></g>
         </svg>
       </div>
-    </article>
+    </div>
+    <h3 class="subh">Step A · the log-likelihood</h3>
+    <div class="derive">
+      <div class="drow"><span class="k">log of one</span><span class="eq">log p(xᵢ) = −½ log(2π) − ½ log σ² − (xᵢ − μ)²/(2σ²)</span><span class="why">Tool 3: <span class="m">log(1/√a) = −½ log a</span> and <span class="m">log(exp(b)) = b</span></span></div>
+      <div class="drow"><span class="k">sum all</span><span class="eq">ℓ(μ, σ²) = const − (n/2) log σ² − (1/(2σ²)) Σ(xᵢ − μ)²</span><span class="why">add n copies; −½ log(2π) has no parameter, call it “const”</span></div>
+    </div>
+    <h3 class="subh">Step B · find μ̂ (treat σ² as a fixed number)</h3>
+    <div class="derive">
+      <div class="drow"><span class="k">3 · D</span><span class="eq">∂ℓ/∂μ = (1/σ²) Σ(xᵢ − μ)</span><span class="why">derivative of <span class="m">−(x − μ)²/(2σ²)</span> in μ: bring the 2 down, inside derivative is −1, so the minus signs cancel</span></div>
+      <div class="drow"><span class="k">set 0</span><span class="eq">Σ(xᵢ − μ) = 0 → Σxᵢ − nμ = 0</span><span class="why">multiply by σ²; Σμ = nμ because μ appears n times</span></div>
+      <div class="drow ans"><span class="k">solve</span><span class="eq">μ̂ = Σxᵢ / n = x̄ = (50 + 60 + 70)/3 = 60</span><span class="why">the average</span></div>
+    </div>
+    <h3 class="subh">Step C · find σ̂² (write v = σ² to keep it simple)</h3>
+    <div class="derive">
+      <div class="drow"><span class="k">rewrite</span><span class="eq">ℓ(v) = const − (n/2) log v − S/(2v), S = Σ(xᵢ − μ̂)²</span><span class="why">S is just a number: 100 + 0 + 100 = 200</span></div>
+      <div class="drow"><span class="k">3 · D</span><span class="eq">ℓ′(v) = −n/(2v) + S/(2v²)</span><span class="why"><span class="m">log v → 1/v</span>; <span class="m">1/v → −1/v²</span>, and minus times minus is plus</span></div>
+      <div class="drow"><span class="k">set 0</span><span class="eq">−nv + S = 0</span><span class="why">multiply everything by 2v²</span></div>
+      <div class="drow ans"><span class="k">solve</span><span class="eq">σ̂² = S/n = (1/n) Σ(xᵢ − x̄)² = 200/3 ≈ 66.7</span><span class="why">the average squared distance to the center</span></div>
+    </div>
+    <div class="note-card"><b>On the exam (2025 Final 4(e)):</b> in linear regression the same Step C gives the noise variance <span class="m">σ̂² = (1/n) Σ (yᵢ − ŵᵀxᵢ)²</span>. Divide by <b>n</b>, not n − 1.</div>
+    <p class="remember"><b>Remember it:</b> best center = average; best spread = average squared distance from that average.</p>
+  </section>
 
-    <article class="ex" id="ex5">
-      <div class="left">
-        <span class="label">Example 5 · Uniform (Week 4, German tanks)</span>
-        <h3>An imaginary hero deals random damage from 0 to θ. You saw 120, 85, 143. <span class="dim">Max damage θ?</span></h3>
-        <div class="mathbox">
-          <span>Each hit: <span class="m">p(x | θ) = 1/θ</span> if <span class="m">0 ≤ x ≤ θ</span>, else 0</span>
-          <span><span class="m">L(θ) = θ<sup>−n</sup></span> if <span class="m">θ ≥ max xᵢ</span>, else <span class="m">0</span></span>
-          <span>The derivative is never 0. <span class="m">θ<sup>−n</sup></span> only goes down as θ grows.</span>
-          <span class="ok">So take the smallest allowed θ: <span class="m">θ̂ = max xᵢ = 143</span></span>
-        </div>
-        <p>Step 4 matters: here the top of the hill is at the edge. Draw the function when the derivative trick fails.</p>
+  <!-- PART 10: Uniform -->
+  <section class="section" id="ex5">
+    <div class="phead2"><span class="pnum">Part 10</span><h2>When the derivative fails. <span class="dim">Look at the picture instead.</span></h2></div>
+    <div class="twocol">
+      <div class="prose">
+        <p><b>What is this model?</b> An imaginary hero deals random damage, any value between 0 and θ equally likely. That is the <b>uniform distribution</b>: <span class="m">p(x | θ) = 1/θ</span> for <span class="m">0 ≤ x ≤ θ</span>, and 0 outside.</p>
+        <p><b>Data:</b> hits of 120, 85 and 143. What is the max damage θ?</p>
+        <ol class="olist">
+          <li><b>Likelihood.</b> If θ is at least 143, every hit is possible: <span class="m">L(θ) = (1/θ)³ = θ<sup>−3</sup></span>.</li>
+          <li>If θ is below 143, the hit of 143 is impossible, so <span class="m">L(θ) = 0</span>.</li>
+          <li><b>Derivative?</b> <span class="m">−3θ<sup>−4</sup></span> is never 0. The usual step 3 gives nothing.</li>
+          <li><b>Picture.</b> L is 0 up to 143, jumps up, then only falls. So the top is right at the jump.</li>
+        </ol>
+        <p class="ansline">θ̂ = max xᵢ = 143</p>
       </div>
-      <div class="right">
-        <div class="numbers"><span>max = <b>143</b></span><span>θ̂ = <b>143</b></span></div>
+      <div class="panel">
         <svg viewBox="0 0 400 200" role="img" aria-label="Likelihood is zero below 143 and decreasing after it">
           <line x1="20" y1="180" x2="390" y2="180" stroke="#e1d8cd"/>
           <path d="M150 30 C200 90 260 130 390 160 L390 180 L150 180Z" fill="url(#orangeArea)"/>
@@ -454,8 +691,44 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
           <text x="160" y="28" font-size="13" font-weight="600" fill="#262626" font-family="Geist, sans-serif">θ̂ = 143</text>
           <text x="22" y="170" font-size="12" fill="#a19a94" font-family="Geist, sans-serif">L = 0 here</text>
         </svg>
+        <p class="note2">Why can't θ be bigger? A bigger θ spreads the probability over more values, so each hit we saw becomes less likely.</p>
       </div>
-    </article>
+    </div>
+    <p class="remember"><b>Remember it:</b> if the slope is never zero, draw L. The top can be at an edge. (Week 4, “German tanks”.)</p>
+  </section>
+
+  <!-- MISTAKES + SHEET -->
+  <section class="section" id="sheet">
+    <div class="phead2"><span class="pnum">Part 11</span><h2>Learn it by heart. <span class="dim">One table, six traps, five questions.</span></h2></div>
+    <div class="panel">
+      <table class="sheet">
+        <thead><tr><th>Model</th><th>Likelihood</th><th>MLE</th><th>In words</th></tr></thead>
+        <tbody>
+          <tr><td>Bernoulli θ</td><td><span class="m">θ<sup>k</sup>(1−θ)<sup>n−k</sup></span></td><td><span class="m">k/n</span></td><td>hits ÷ tries</td></tr>
+          <tr><td>Exponential λ</td><td><span class="m">λ<sup>n</sup>e<sup>−λΣx</sup></span></td><td><span class="m">n/Σxᵢ = 1/x̄</span></td><td>1 ÷ average wait</td></tr>
+          <tr><td>Geometric q</td><td><span class="m">q<sup>n</sup>(1−q)<sup>S</sup></span></td><td><span class="m">n/(n+S)</span></td><td>wins ÷ games</td></tr>
+          <tr><td>Gaussian μ</td><td colspan="1"><span class="m">exp(−Σ(x−μ)²/2σ²)</span></td><td><span class="m">x̄</span></td><td>the average</td></tr>
+          <tr><td>Gaussian σ²</td><td>same</td><td><span class="m">(1/n)Σ(xᵢ−x̄)²</span></td><td>average squared distance</td></tr>
+          <tr><td>Uniform θ</td><td><span class="m">θ<sup>−n</sup></span> if θ ≥ max</td><td><span class="m">max xᵢ</span></td><td>the largest value seen</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="traps">
+      <div class="trap"><b>Trap 1</b><span>Writing the probability of one data point and forgetting to multiply over all n.</span></div>
+      <div class="trap"><b>Trap 2</b><span><span class="m">log(a + b)</span> is <b>not</b> <span class="m">log a + log b</span>. The rule is only for products.</span></div>
+      <div class="trap"><b>Trap 3</b><span>Dropping a term that contains θ. Only terms <i>without</i> the parameter may go.</span></div>
+      <div class="trap"><b>Trap 4</b><span>Dividing by n − 1 for σ̂². The MLE divides by n.</span></div>
+      <div class="trap"><b>Trap 5</b><span>Skipping the check. Sometimes the top is at the edge (uniform).</span></div>
+      <div class="trap"><b>Trap 6</b><span>Calling L(θ) “the probability that θ is true”. It is a score for each guess.</span></div>
+    </div>
+    <h3 class="subh">Explain it back: say each answer out loud before opening it</h3>
+    <div class="faq">
+      <details><summary>What is a likelihood, in one sentence?</summary><div class="a"><p>For a fixed set of data, it gives every possible parameter value a score: how probable the data would be if that value were true.</p></div></details>
+      <details><summary>Why is it allowed to maximize log L instead of L?</summary><div class="a"><p>Log always goes up, so the same θ is at the top of both curves. And log turns the product into a sum, which is easy to differentiate.</p></div></details>
+      <details><summary>Why is the derivative zero at the MLE?</summary><div class="a"><p>The MLE is the top of the ℓ hill. At the top the curve is flat: going left it rises, going right it falls, and in between the slope is exactly 0.</p></div></details>
+      <details><summary>Why is the Bernoulli MLE exactly k/n?</summary><div class="a"><p>The derivative is k/θ − (n − k)/(1 − θ): hits pull θ up, misses pull it down. They balance exactly when θ = k/n.</p></div></details>
+      <details><summary>What is the weakness of MLE?</summary><div class="a"><p>With little data it believes the data too much: 3 hits out of 3 gives θ̂ = 1, “never misses”. The next lecture adds a prior to fix this.</p></div></details>
+    </div>
   </section>
 
   <!-- LAB -->
@@ -549,14 +822,14 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
         <div class="prob-top"><span class="prob-n">01</span><span class="lvl lvl-easy">Easy</span></div>
         <h3>Pudge hooks</h3>
         <p>Pudge throws 18 hooks and lands 6. Model each hook as Bernoulli(θ). Write <span class="m">L(θ)</span>, <span class="m">ℓ(θ)</span>, the derivative, and find <span class="m">θ̂</span>.</p>
-        <details><summary>Hint</summary><div class="a"><p>Exactly Example 1 with k = 6 and n = 18.</p></div></details>
+        <details><summary>Hint</summary><div class="a"><p>Exactly Part 6 with k = 6 and n = 18.</p></div></details>
         <details><summary>Solution</summary><div class="a"><ul class="steps-l"><li><span class="m">L(θ) = θ<sup>6</sup>(1 − θ)<sup>12</sup></span>, <span class="m">ℓ(θ) = 6 log θ + 12 log(1 − θ)</span></li><li><span class="m">6/θ − 12/(1 − θ) = 0</span> → <span class="m">6(1 − θ) = 12θ</span></li><li><span class="m">θ̂ = 6/18 = 1/3</span></li></ul></div></details>
       </article>
       <article class="prob">
         <div class="prob-top"><span class="prob-n">02</span><span class="lvl lvl-easy">Easy</span></div>
         <h3>Minutes between your deaths</h3>
         <p>In one game, the minutes between your deaths were 3, 7, 2, 8. Model them as Exponential(λ). Find <span class="m">λ̂</span> and say in words what it means.</p>
-        <details><summary>Hint</summary><div class="a"><p><span class="m">λ̂ = n / Σ xᵢ</span> (Example 2).</p></div></details>
+        <details><summary>Hint</summary><div class="a"><p><span class="m">λ̂ = n / Σ xᵢ</span> (Part 7).</p></div></details>
         <details><summary>Solution</summary><div class="a"><ul class="steps-l"><li><span class="m">Σ xᵢ = 20</span>, <span class="m">n = 4</span>, so <span class="m">λ̂ = 4/20 = 0.2</span> deaths per minute</li><li>In words: on average you die once every <span class="m">1/λ̂ = 5</span> minutes.</li></ul></div></details>
       </article>
       <article class="prob">
@@ -570,14 +843,14 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
         <div class="prob-top"><span class="prob-n">04</span><span class="lvl lvl-med">Medium</span></div>
         <h3>Games until the first win (2026 version)</h3>
         <p>On four days you needed 3, 1, 2, 4 games to get your first win, including the win. Model: <span class="m">p(y | λ) = λ(1 − λ)<sup>y−1</sup></span>, y = 1, 2, …. Derive <span class="m">λ̂</span>.</p>
-        <details><summary>Hint</summary><div class="a"><p><span class="m">L(λ) = λ<sup>n</sup>(1 − λ)<sup>Σ(yᵢ − 1)</sup></span>. Then it looks like Example 3.</p></div></details>
+        <details><summary>Hint</summary><div class="a"><p><span class="m">L(λ) = λ<sup>n</sup>(1 − λ)<sup>Σ(yᵢ − 1)</sup></span>. Then it looks like Part 8.</p></div></details>
         <details><summary>Solution</summary><div class="a"><ul class="steps-l"><li><span class="m">ℓ(λ) = n log λ + (Σ yᵢ − n) log(1 − λ)</span></li><li><span class="m">n/λ − (Σ yᵢ − n)/(1 − λ) = 0</span></li><li><span class="m">λ̂ = n / Σ yᵢ = 4/10 = 0.4</span>: 4 wins in 10 games.</li></ul></div></details>
       </article>
       <article class="prob">
         <div class="prob-top"><span class="prob-n">05</span><span class="lvl lvl-med">Medium</span></div>
         <h3>GPM over five games</h3>
         <p>Your GPM: 400, 450, 500, 550, 600. Assume a Gaussian. Find <span class="m">μ̂</span> and <span class="m">σ̂²</span>. Why do we divide by 5 and not by 4?</p>
-        <details><summary>Hint</summary><div class="a"><p>Example 4: <span class="m">μ̂ = x̄</span>, <span class="m">σ̂² = (1/n) Σ (xᵢ − x̄)²</span>.</p></div></details>
+        <details><summary>Hint</summary><div class="a"><p>Part 9: <span class="m">μ̂ = x̄</span>, <span class="m">σ̂² = (1/n) Σ (xᵢ − x̄)²</span>.</p></div></details>
         <details><summary>Solution</summary><div class="a"><ul class="steps-l"><li><span class="m">μ̂ = 500</span></li><li><span class="m">σ̂² = (10000 + 2500 + 0 + 2500 + 10000)/5 = 5000</span>, <span class="m">σ̂ ≈ 70.7</span></li><li>The derivative of the log-likelihood gives exactly 1/n. Dividing by n − 1 is a different (unbiased) estimator, not the MLE.</li></ul></div></details>
       </article>
       <article class="prob">
@@ -679,8 +952,8 @@ footer{text-align:center;color:var(--soft);font-size:13px;padding-top:16px}
 
   // exam stepper
   const S=[
-    {tag:"2025 Final · Task 4(e)",title:"MLE of the noise variance in linear regression",text:"You get ℓ(σ²) and must find σ̂². Differentiate in σ², set to 0: σ̂² = (1/n) Σ (yᵢ − ŵᵀxᵢ)². Exactly Example 4."},
-    {tag:"2025 Final · Task 5(a)",title:"Fit a Naive Bayes classifier with MLE",text:"Pass/fail from attendance and homework. MLE = counting: π̂ = students in class ÷ all, θ̂ = students with the feature in class ÷ students in class. Example 1 again."},
+    {tag:"2025 Final · Task 4(e)",title:"MLE of the noise variance in linear regression",text:"You get ℓ(σ²) and must find σ̂². Differentiate in σ², set to 0: σ̂² = (1/n) Σ (yᵢ − ŵᵀxᵢ)². Exactly Part 9, Step C."},
+    {tag:"2025 Final · Task 5(a)",title:"Fit a Naive Bayes classifier with MLE",text:"Pass/fail from attendance and homework. MLE = counting: π̂ = students in class ÷ all, θ̂ = students with the feature in class ÷ students in class. Part 6 again."},
     {tag:"2025 Final · Task 6(c)",title:"MLE of a Markov chain",text:"Start distribution and transition matrix from three sentences. Each entry is a count ÷ a total. The same k/n idea."},
     {tag:"2026 Final · Task 1(g)",title:"Duffing oscillator: write down the MLE",text:"A non-linear formula that is linear in the unknowns. With Gaussian noise, MLE = least squares: β̂ = (XᵀX)⁻¹Xᵀy. Day 13 builds this."},
     {tag:"2026 Final · Task 5",title:"True or false: θ_MLE and θ_MAP fix the posterior",text:"False. Two numbers cannot describe a whole curve. MLE is one point; the posterior is a full distribution (Day 3)."}
